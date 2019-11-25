@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ url_for("static",filename = "css/login_regist.css") }}">
 {% endblock %}
 {% block main%}
-    <form action="" method="POST">
+    <form action="{{ url_for('login') }}" method="POST">
         <div class="form-container">
             <div class="form-group">
             <h3 class="page-title">登陆</h3>

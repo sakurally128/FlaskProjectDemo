@@ -4,20 +4,20 @@
     <link rel="stylesheet" href="{{ url_for("static",filename = "css/login_regist.css") }}">
 {% endblock %}
 {% block main%}
-    <form action="" method="POST">
+    <form action="{{ url_for('regist') }}" method="POST">
         <div class="form-container">
             <div class="form-group">
             <h3 class="page-title">注册</h3>
-            <input type="text" class="form-control" placeholder="请输入手机号码">
+            <input type="text" class="form-control"  oninput = "value=value.replace(/[^\d]/g,'')" maxlength="11" placeholder="请输入手机号码" name="telephone">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control"  placeholder="用户名">
+                <input type="text" class="form-control"  placeholder="用户名" name="username">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control"  placeholder="请输入密码">
+                <input type="password" class="form-control"   placeholder="请输入密码" name="password1">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control"  placeholder="重复密码">
+                <input type="password"  class="form-control"  placeholder="重复密码" name="password2">
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-primary btn-block">立即注册</button>
