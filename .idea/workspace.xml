@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9685def-3627-4d06-9c33-9e8bf4c3dd32" name="Default Changelist" comment="提交登陆注册视图">
-      <change afterPath="$PROJECT_DIR$/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/question.html" afterDir="false" />
+    <list default="true" id="b9685def-3627-4d06-9c33-9e8bf4c3dd32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login_regist.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login_regist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/regist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -111,7 +109,11 @@
       <updated>1574411026549</updated>
       <workItem from="1574411027821" duration="8447000" />
       <workItem from="1574648272907" duration="23676000" />
-      <workItem from="1574750501778" duration="12306000" />
+      <workItem from="1574750501778" duration="13189000" />
+      <workItem from="1574822212620" duration="10509000" />
+      <workItem from="1574853861205" duration="2047000" />
+      <workItem from="1574907825172" duration="1501000" />
+      <workItem from="1574921670234" duration="7969000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1574419318023</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574679279323</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="发布问答">
+      <created>1574767563536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574767563536</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,9 +179,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
     <MESSAGE value="提交登陆注册视图" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交登陆注册视图" />
+    <MESSAGE value="发布问答" />
+    <option name="LAST_COMMIT_MESSAGE" value="发布问答" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlaskProjectDemo$Flask__app_demo_py_.coverage" NAME="Flask (app_demo.py) Coverage Results" MODIFIED="1574767456779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskProjectDemo$Flask__app_demo_py_.coverage" NAME="Flask (app_demo.py) Coverage Results" MODIFIED="1574930702401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

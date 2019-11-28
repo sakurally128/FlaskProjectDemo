@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request,redirect,url_for,session
 from decorators import login_required
-from models import User
+from models import User,Question
 from exts import db
 import config
 
@@ -8,13 +8,14 @@ app = Flask(__name__)
 app.config.from_object(config)
 db.init_app(app)
 
-@app.route('/')
-def demo():
-    return render_template("index.html")
 
-@app.route('/index')
+@app.route('/')
 def index():
-    return render_template("index.html")
+    context = {
+        'questions':Question.query.order_by(db.desc(Question.create_time)).all()
+    }
+    return render_template("index.html",**context)
+
 
 @app.route('/login',methods=["GET","POST"])
 def login():
@@ -69,7 +70,28 @@ def question():
     if request.method == 'GET':
         return render_template('question.html')
     else:
-        pass
+        title = request.form.get("title")
+        content = request.form.get("content")
+        question = Question(title = title,content = content)
+        user_id = session.get("user_id")
+        user = User.query.filter(User.id == user_id).first()
+        question.author = user
+        db.session.add(question)
+        db.session.commit()
+        return redirect(url_for("index"))
+    
+@app.route('/add_answer')
+def add_answer():
+    content = request.form.get("answer_content")
+
+
+@app.route('/detail/<question_id>')
+def detail(question_id):
+    context = {
+        'question': Question.query.filter(Question.id == question_id).first()
+    }
+    return render_template("detail.html",**context)
+
 @app.context_processor
 def my_context_processor():
     user_id = session.get("user_id")

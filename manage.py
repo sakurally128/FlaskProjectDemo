@@ -1,7 +1,7 @@
 from flask_script import Manager
 from flask_migrate import Migrate,MigrateCommand
 from app_demo import app
-from models import User
+from models import User,Question
 from exts import db
 
 manager = Manager(app)

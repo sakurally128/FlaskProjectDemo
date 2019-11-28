@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block script %}
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">{{ question.title }}</h3>
+    <p class="question-info">
+        <span>作者：{{ question.author.username }}</span>
+        <span>时间:{{ question.create_time }}</span>
+    </p>
+    <hr>
+    <p class="question-content">{{ question.content }}</p>
+    <hr>
+    <h4>评论:(0)</h4>
+    <form action="#" method="post">
+        <div class="form-group" style="padding-right: 10px" >
+            <input type="text" class="form-control" name="answer_content" placeholder="请输入评论" style="width: 660px;float: left;">
+            <button class="btn btn-primary"style="float: left;margin:0 10px 0;width: 150px" >立即评论</button>
+        </div>
+    </form>
+
+{% endblock %}
